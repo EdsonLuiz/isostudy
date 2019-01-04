@@ -110,12 +110,16 @@ a {
     padding: 100px 20px;
   }
 
-  .hearo h1 {
+  .hero h1 {
     font-size: 40px;
   }
 
   .hero p {
     font-size: 24px;
+  }
+
+  .hero .logos {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .cards h2 {
