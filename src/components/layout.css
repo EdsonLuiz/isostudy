@@ -66,12 +66,35 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
+.cards h2 {
+  background: linear-gradient(104deg, #050a27 0%, #4a548c 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 50px 20px;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .card-group {
   margin: 50px 40px 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
   justify-items: center;
+}
+
+@media (max-width: 1060px) {
+  .card-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .card-group {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media (max-width: 640px) {
@@ -85,6 +108,10 @@ a {
 
   .hero p {
     font-size: 24px;
+  }
+
+  .cards h2 {
+    font-size: 34px;
   }
 }
 
