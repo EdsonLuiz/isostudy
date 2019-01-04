@@ -11,6 +11,13 @@ import wallpaper2 from '../images/wallpaper2.jpg'
 import wallpaper3 from '../images/wallpaper3.jpg'
 import wallpaper4 from '../images/wallpaper4.jpg'
 
+import logosketch from '../images/logo-sketch.png'
+import logofigma from '../images/logo-figma.png'
+import logostudio from '../images/logo-studio.png'
+import logoframer from '../images/logo-framer.png'
+import logoreact from '../images/logo-react.png'
+import logoswift from '../images/logo-swift.png'
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -22,9 +29,18 @@ const IndexPage = () => (
           and build apps with React and Swift.
         </p>
         <Link to="/page-2/">Watch the video</Link>
-      </div>
-    </div>
-
+        <div className="logos">
+          <img src={logosketch} alt="logosketch" width="50" />
+          <img src={logofigma} alt="logofigma" width="50" />
+          <img src={logostudio} alt="logostudio" width="50" />
+          <img src={logoframer} alt="logoframer" width="50" />
+          <img src={logoreact} alt="logoreact" width="50" />
+          <img src={logoswift} alt="logoswift" width="50" />
+        </div>
+      </div>{' '}
+      {/* END .hero-group */}
+    </div>{' '}
+    {/* END .hero */}
     <div className="cards">
       <h2>11 Courses, more coming</h2>
       <div className="card-group">
