@@ -1,8 +1,14 @@
 .header {
- position: fixed;
- width: 100%;
-padding: 50px 0;
-z-index: 100; 
+  position: fixed;
+  width: 100%;
+  padding: 50px 0;
+  z-index: 100;
+  transition: 0.8s cubic-bezier(0.2, 0.82, 0.2, 1);
+}
+
+.header-scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 15px 0;
 }
 
 .header-group {
@@ -20,20 +26,20 @@ z-index: 100;
 }
 
 .header button {
-   padding: 8px 20px;
-   font-size: 20px;
-   background-color: #56ccf2;
-   border: none;
-   font-weight: 700;
-   border-radius: 10px;
-   outline: none;
-   cursor: pointer;
-   transition: 1s cubic-bezier(0.2, 0.82, 0.2, 1);
+  padding: 8px 20px;
+  font-size: 20px;
+  background-color: #56ccf2;
+  border: none;
+  font-weight: 700;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.2, 0.82, 0.2, 1);
 }
 
 .header button:hover {
   background-color: #ffffff;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
   transform: translateY(-3px);
 }
 
